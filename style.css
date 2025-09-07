@@ -1,0 +1,118 @@
+ header {
+    background: #ff69b4; /* لون أخضر */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;            /* يثبت في أعلى الصفحة */
+    left: 0;
+    width: 100%;       /* يغطي عرض الصفحة كله */
+    z-index: 1000;     /* يخلي الهيدر فوق أي عنصر تاني */
+}
+header nav ul {
+    list-style:none;
+    display: flex;
+    justify-content:right;
+    gap: 20px; /* مسافة بين العناصر */ 
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: rgba(131, 14, 123, 0.468); /* يتغير اللون عند المرور */
+}
+#home {
+    margin-top: 80px; /* نفس تقريباً ارتفاع الهيدر */
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(21, 116, 116);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+/*#home button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #ff69b4;
+    color: white;
+    cursor:pointer;
+    transition: 0.5s;
+}*/
+.btn {
+    display: inline-block;       /* يخليها تتعامل كزر */
+    padding: 10px 20px;          /* مسافة داخلية */
+    margin: 5px;                 /* مسافة بين الأزرار */
+    border-radius: 5px;          /* حواف دائرية */
+    background: #ff69b4;         /* لون الخلفية */
+    color: white;                /* لون النص */
+    text-decoration: none;       /* يشيل الخط اللي تحت اللينك */
+    font-weight:lighter;           /* يخلي النص عريض */
+    transition: 0.4s;            /* عشان الانيميشن يبقى ناعم */
+}
+
+.btn:hover {
+    background: #ff1493;         /* اللون لما تمرري الماوس */
+    transform: scale(1.05);      /* تكبير بسيط */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+ #About {
+    text-align:justify;
+    padding: 100px 20px;
+    color: rgb(255, 255, 255);
+   background-color: rgb(21, 116, 116);
+}
+ #projects {
+    text-align:justify;
+    padding: 100px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 116, 116);
+}
+ #skills {
+    text-align:justify;
+    padding: 100px 20px;
+    color: rgb(230, 230, 230);
+    background-color: rgb(21, 116, 116);
+}
+ #contact{
+    text-align:justify;
+    padding: 100px 20px;
+    color: rgb(255, 255, 255);
+   background-color: rgb(21, 116, 116);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.4s, box-shadow 0.4s;
+    margin-right: 80px;
+}
+
+img:hover {
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.projects-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* المسافة بين قائمة المشاريع والصور */
+    flex-wrap: wrap; /* للسماح بالالتفاف على الشاشات الصغيرة */
+}
+footer {
+    background: #333;         /* خلفية غامقة */
+    color: white;             /* لون النص أبيض */
+    text-align: center;       /* النص في المنتصف */
+    padding: 15px 0;          /* مسافة داخلية فوق وتحت */
+    margin-top: 20px;         /* مسافة بينه وبين اللي فوقه */
+    font-size: 14px;          /* حجم الخط */
+}
+
